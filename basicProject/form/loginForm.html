@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box" style="width:900px ;">
+            <div class="odin"> 
+                <img class="" style="height:150px; margin:260px;" src="../image/odin-lined.png" alt="img">
+            </div>
+           
+        </div>
+
+        <div class="box1">
+            <div class="B1"> <div class="font">This is not a ral online service!You Know you nedd something like this in your life to help you realize your deepest dreams.
+                sign up now to get started
+            <p>You Know you want to.</p>
+            </div>
+                </div>
+            <div class="B2"> <div class="txt"> <h1>Lets Do this!</h1> 
+                <form >  
+                  <div class="container">
+                    <div class="div1">
+                        <label class="family" for="">FIRST NAME</label><br>
+                        <input class="input1" type="text"> <br><br>
+                        <label class="family" for="">EMAIL ID</label><br>
+                        <input class="input1" type="email" > <br><br>
+                        <label class="family" for="">PASSWORD</label><br>
+                        <input class="input1" type="password"  id="pass"> <br><br></div>
+                    <div class="div2">
+                        <label class="family" for="">LAST NAME</label><br>
+                        <input class="input1" type="text"> <br><br>
+                        <label class="family" for="">PHONE NUMBER</label><br>
+                        <input class="input1" type="number" maxlength="10" > <br><br>
+                        <label class="family" for="">CONFIRM PASSWORD</label><br>
+                        <input class="input1" type="password"  id="cnf"> <br><br></div>
+                  </div>
+                  <!-- <button type="submit" onclick="return Validte()">submit</button> -->
+                </form>
+            </div> </div>
+            <div class="B3">
+                <button class="btn">Create Account</button>
+               <p><strong>Already have an account?</strong><a href=""><Strong style="color:#596D48 ;">Login</Strong> </a></p> 
+            </div>
+        </div>
+    </div>
+    <script>
+          function Validate() {
+        var password = document.getElementById("pass").value;
+        var confirmPassword = document.getElementById("cnf").value;
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return true;
+    }
+    </script>
+</body>
+</html>
