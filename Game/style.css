@@ -1,0 +1,105 @@
+*{
+	padding:0;
+	margin:0;
+	font-family: 'Itim',cursive;
+}
+.background{
+	background-color: skyblue;
+	height: 100vh;
+	padding-top: 1px;
+}
+
+.title{
+	color: black;
+	font-size: 40px;
+	text-align: center;
+	margin-top: 10%;
+}
+.display{
+	color: black;
+	font-size: 35px;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	display: flex;
+	justify-content: center;
+}
+.player1, .player2{
+	background: #FF3860;
+	border-radius: 4px;
+	padding: 10px;
+	margin: 10px
+}
+.display div.active{
+	background-color: aquamarine;
+	color: blue;
+}
+
+.disabled{
+	pointer-events: none;
+}
+.hide{
+	display: none;
+}
+.container{
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(3,auto);
+	max-width: 300px;
+}
+.box{
+	border: 1px solid black;
+	min-width: 100px;
+	min-height:100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;
+	cursor: pointer;
+}
+.cell.X{
+	color: aqua;
+}
+.cell.O{
+	color: #FF3860;
+}
+
+.result{
+	/* display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1em; */
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99;
+	background: rgba(0, 0, 0,0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	
+}
+.result h1{
+	color: #fff;
+	font-size: 50px;
+	background-color: bisque;
+	padding: 15px 25px;
+}
+#Reset{
+	background-color: #FF3860;
+	color: white;
+	padding: 8px;
+	border-radius: 8px;
+	border: none;
+	font-size: 20px;
+	margin-left: 1em;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+.inactive{
+	display: none;
+}
